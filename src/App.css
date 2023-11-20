@@ -1,38 +1,109 @@
+* {
+  background-color: rgb(255, 255, 255);
+}
+
 .App {
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-button {
   display: flex;
+  /* text-align: left;/ */
+  border: 3px solid black;
+  border-radius: 5px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+  margin-bottom: 10px;
+  width: 190px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-button {
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: left;
+  margin: 10px 10px;
+  width: 220px;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+
+label {
+  margin-bottom: 10px;
+  color: rgb(113, 112, 112);
+}
+
+
+select {
+  /* margin: 10px 5px; */
+  margin-left: 30px;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  padding: 5px;
+}
+
+option {
+  padding: 20px;
+  text-align: center;
+  margin: 40px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.kanban-board {
+  /* border: 2px solid hotpink; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.kanban-group {
+  /* border: 2px solid purple; */
+
+}
+
+.kanban-card {
+  background-color: white;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 240px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.kanban-card .ticket-details {
+  /* border: 2px solid red; */
+  padding: 2px;
+  /* height: 140px; */
+  text-align: left;
+}
+
+.kanban-card .ticket-details .ticket-id {
+  color: grey;
+  margin: 4px;
+}
+
+.kanban-card .ticket-details .status {
+  display: flex;
+  justify-content: left;
+  text-wrap: wrap;
+  margin: 4px;
+  font-size: 12px;
+}
+
+.kanban-card .ticket-details .priority {
+  display: flex;
+  justify-content: left;
+  text-wrap: wrap;
+  margin: 4px;
+  color: grey;
 }
